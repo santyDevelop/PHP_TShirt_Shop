@@ -5,8 +5,9 @@ require_once 'Models/Producto.php';
 class productoController {
 
     public function renderizarVistaDestacados() {
-        //$producto = new Producto();
-	//$productos = $producto->getRandom(6);
+        $producto = new Producto();
+	$productos = $producto->getRandom(6);
+        
         // renderizar vista
         require_once 'Views/Producto/destacados.php';
     }
@@ -20,7 +21,7 @@ class productoController {
 
             $product = $producto->getOne();
         }
-        require_once 'views/producto/ver.php';
+        require_once 'Views/Producto/ver.php';
     }
 
     public function gestionProductos() {

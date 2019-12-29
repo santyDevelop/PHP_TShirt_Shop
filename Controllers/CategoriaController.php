@@ -1,7 +1,7 @@
 <?php
 
 require_once 'Models/Categoria.php';
-//require_once 'models/producto.php';
+require_once 'Models/producto.php';
 
 class categoriaController {
 
@@ -28,7 +28,7 @@ class categoriaController {
             $productos = $producto->getAllCategory();
         }
 
-        require_once 'views/categoria/ver.php';
+        require_once 'Views/Categoria/ver.php';
     }
 
     public function crear() {
